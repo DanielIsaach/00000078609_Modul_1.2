@@ -296,7 +296,11 @@ fun AlignYourBodyRowPreview() {
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
 @Composable
 fun HomeSectionPreview() {
-    MySootheTheme { HomeSection() }
+    MySootheTheme {
+        HomeSection(R.string.align_your_body) {
+            AlignYourBodyRow()
+        }
+    }
 }
 
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
